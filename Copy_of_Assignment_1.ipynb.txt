@@ -25,6 +25,15 @@
       }
     },
     {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "k2ItBjjM3Cka"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "source": [
         "## 1. Split this string"
@@ -36,7 +45,7 @@
     {
       "cell_type": "code",
       "source": [
-        "s = \"Hi there Sam!\""
+        "S = \"Hi there Sam!\""
       ],
       "metadata": {
         "id": "s07c7JK7Oqt-"
@@ -47,6 +56,7 @@
     {
       "cell_type": "code",
       "source": [
+        "\n",
         "string = \"Hi there Sam!\"\n",
         "print(string.split())"
       ],
@@ -55,7 +65,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "29093895-e8ab-4e03-b333-465264726d8a"
+        "outputId": "b2b1e283-afac-4aeb-e6ef-05e5fbcf9229"
       },
       "execution_count": null,
       "outputs": [
@@ -67,17 +77,6 @@
           ]
         }
       ]
-    },
-    {
-      "cell_type": "markdown",
-      "source": [
-        "## 2. Use .format() to print the following string. \n",
-        "\n",
-        "### Output should be: The diameter of Earth is 12742 kilometers."
-      ],
-      "metadata": {
-        "id": "GH1QBn8HP375"
-      }
     },
     {
       "cell_type": "code",
@@ -96,18 +95,14 @@
       "source": [
         "planet = \"Earth\"\n",
         "diameter = 12742\n",
-        "planet = \"Earth\"\n",
-        "diameter = 12742\n",
-        "\n",
-        "print(\"The diameter of {} is {} kilometers.\".format(planet, diameter))\n",
-        "print(\"The diameter of {} is {} kilometers.\".format(planet, diameter))"
+        "print( 'The diameter of {} is {} kilometers.' .format(planet,diameter));"
       ],
       "metadata": {
         "id": "HyRyJv6CYPb4",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "ec7f498d-cc55-416a-8e7a-5ead2f86fd4d"
+        "outputId": "f0e99097-464d-4275-bd80-69a7a819d965"
       },
       "execution_count": null,
       "outputs": [
@@ -115,7 +110,6 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "The diameter of Earth is 12742 kilometers.\n",
             "The diameter of Earth is 12742 kilometers.\n"
           ]
         }
@@ -153,7 +147,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "d4ed84cd-7897-43c1-cd29-3c2728f950e3"
+        "outputId": "63d24486-09c7-458a-fe8e-485db1ecaf8b"
       },
       "execution_count": null,
       "outputs": [
@@ -209,7 +203,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "81f05781-c29c-4fc7-d99e-7a6e93dec2bf"
+        "outputId": "3a408362-f252-4dae-9b98-26f3b456dbeb"
       },
       "execution_count": null,
       "outputs": [
@@ -236,7 +230,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "2078f422-9151-47bc-a3a9-04e6b779cdc4"
+        "outputId": "d6d13e15-9eba-487b-fcd2-4a210387129c"
       },
       "execution_count": null,
       "outputs": [
@@ -272,7 +266,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "b64b9eff-c45e-4646-b6cd-080432583bab"
+        "outputId": "61384b06-bbf6-4ade-9f4e-c3636b62e340"
       },
       "execution_count": null,
       "outputs": [
@@ -307,7 +301,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "e0cd85f9-2afa-45e9-da1b-acdb474119ec"
+        "outputId": "4446c922-9c0e-4fed-a1ed-cc091dded74b"
       },
       "execution_count": null,
       "outputs": [
@@ -350,7 +344,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "5ca476bf-80d6-44bb-d269-0e6fb371de0b"
+        "outputId": "712980a3-762f-4faa-d1e1-31df897b9273"
       },
       "execution_count": null,
       "outputs": [
@@ -384,170 +378,13 @@
     {
       "cell_type": "code",
       "source": [
-        "import pandas as pd\n",
-        "# Initialize data to lists. \n",
-        "\n",
-        "data = [{'a': 1, 'b': 22,},\n",
-        "\n",
-        "        {'a': 10, 'b': 25,},\n",
-        "         \n",
-        "        {'a': 10, 'b': 24,}]\n",
-        "\n",
-        "  \n",
-        "# Creates DataFrame. \n",
-        "\n",
-        "df = pd.DataFrame(data)\n",
-        "\n",
-        "  \n",
-        "# Print the data \n",
-        "df"
+        "import pandas as pd\n"
       ],
       "metadata": {
-        "id": "T5OxJRZ8uvR7",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 143
-        },
-        "outputId": "74a182d0-97f3-43e8-e3e5-c457aa62b64c"
+        "id": "T5OxJRZ8uvR7"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "    a   b\n",
-              "0   1  22\n",
-              "1  10  25\n",
-              "2  10  24"
-            ],
-            "text/html": [
-              "\n",
-              "  <div id=\"df-fc204b77-9004-4819-91ec-d14ea19e8dda\">\n",
-              "    <div class=\"colab-df-container\">\n",
-              "      <div>\n",
-              "<style scoped>\n",
-              "    .dataframe tbody tr th:only-of-type {\n",
-              "        vertical-align: middle;\n",
-              "    }\n",
-              "\n",
-              "    .dataframe tbody tr th {\n",
-              "        vertical-align: top;\n",
-              "    }\n",
-              "\n",
-              "    .dataframe thead th {\n",
-              "        text-align: right;\n",
-              "    }\n",
-              "</style>\n",
-              "<table border=\"1\" class=\"dataframe\">\n",
-              "  <thead>\n",
-              "    <tr style=\"text-align: right;\">\n",
-              "      <th></th>\n",
-              "      <th>a</th>\n",
-              "      <th>b</th>\n",
-              "    </tr>\n",
-              "  </thead>\n",
-              "  <tbody>\n",
-              "    <tr>\n",
-              "      <th>0</th>\n",
-              "      <td>1</td>\n",
-              "      <td>22</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>1</th>\n",
-              "      <td>10</td>\n",
-              "      <td>25</td>\n",
-              "    </tr>\n",
-              "    <tr>\n",
-              "      <th>2</th>\n",
-              "      <td>10</td>\n",
-              "      <td>24</td>\n",
-              "    </tr>\n",
-              "  </tbody>\n",
-              "</table>\n",
-              "</div>\n",
-              "      <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-fc204b77-9004-4819-91ec-d14ea19e8dda')\"\n",
-              "              title=\"Convert this dataframe to an interactive table.\"\n",
-              "              style=\"display:none;\">\n",
-              "        \n",
-              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
-              "       width=\"24px\">\n",
-              "    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"/>\n",
-              "    <path d=\"M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z\"/><path d=\"M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z\"/>\n",
-              "  </svg>\n",
-              "      </button>\n",
-              "      \n",
-              "  <style>\n",
-              "    .colab-df-container {\n",
-              "      display:flex;\n",
-              "      flex-wrap:wrap;\n",
-              "      gap: 12px;\n",
-              "    }\n",
-              "\n",
-              "    .colab-df-convert {\n",
-              "      background-color: #E8F0FE;\n",
-              "      border: none;\n",
-              "      border-radius: 50%;\n",
-              "      cursor: pointer;\n",
-              "      display: none;\n",
-              "      fill: #1967D2;\n",
-              "      height: 32px;\n",
-              "      padding: 0 0 0 0;\n",
-              "      width: 32px;\n",
-              "    }\n",
-              "\n",
-              "    .colab-df-convert:hover {\n",
-              "      background-color: #E2EBFA;\n",
-              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
-              "      fill: #174EA6;\n",
-              "    }\n",
-              "\n",
-              "    [theme=dark] .colab-df-convert {\n",
-              "      background-color: #3B4455;\n",
-              "      fill: #D2E3FC;\n",
-              "    }\n",
-              "\n",
-              "    [theme=dark] .colab-df-convert:hover {\n",
-              "      background-color: #434B5C;\n",
-              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
-              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
-              "      fill: #FFFFFF;\n",
-              "    }\n",
-              "  </style>\n",
-              "\n",
-              "      <script>\n",
-              "        const buttonEl =\n",
-              "          document.querySelector('#df-fc204b77-9004-4819-91ec-d14ea19e8dda button.colab-df-convert');\n",
-              "        buttonEl.style.display =\n",
-              "          google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
-              "\n",
-              "        async function convertToInteractive(key) {\n",
-              "          const element = document.querySelector('#df-fc204b77-9004-4819-91ec-d14ea19e8dda');\n",
-              "          const dataTable =\n",
-              "            await google.colab.kernel.invokeFunction('convertToInteractive',\n",
-              "                                                     [key], {});\n",
-              "          if (!dataTable) return;\n",
-              "\n",
-              "          const docLinkHtml = 'Like what you see? Visit the ' +\n",
-              "            '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
-              "            + ' to learn more about interactive tables.';\n",
-              "          element.innerHTML = '';\n",
-              "          dataTable['output_type'] = 'display_data';\n",
-              "          await google.colab.output.renderOutput(dataTable, element);\n",
-              "          const docLink = document.createElement('div');\n",
-              "          docLink.innerHTML = docLinkHtml;\n",
-              "          element.appendChild(docLink);\n",
-              "        }\n",
-              "      </script>\n",
-              "    </div>\n",
-              "  </div>\n",
-              "  "
-            ]
-          },
-          "metadata": {},
-          "execution_count": 14
-        }
-      ]
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -570,7 +407,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "801e855a-c8ac-46e8-ba81-4950db215846"
+        "outputId": "acfe49b6-f31c-4c65-913c-77bfd5be7897"
       },
       "execution_count": null,
       "outputs": [
@@ -617,7 +454,7 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "8d250a3e-effd-45c6-dc14-6368c7188a94"
+        "outputId": "fdc4acc7-9dbc-418c-e882-081a8225e7bb"
       },
       "execution_count": null,
       "outputs": [
@@ -698,31 +535,167 @@
       "cell_type": "code",
       "source": [
         "import pandas as pd\n",
-        "import numpy as np\n",
-        "lists = np.array([[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]])\n",
+        "# Initialize data to lists. \n",
         "\n",
-        "df=pd.DataFrame(lists)\n",
+        "data = [{'a': 1, 'b': 22,}, \n",
         "\n",
-        "print(df)"
+        "        {'a': 10, 'b': 25,},\n",
+        "         \n",
+        "        {'a': 10, 'b': 24,}]\n",
+        "\n",
+        "  \n",
+        "# Creates DataFrame. \n",
+        "\n",
+        "df = pd.DataFrame(data) \n",
+        "\n",
+        "  \n",
+        "# Print the data \n",
+        "df"
       ],
       "metadata": {
         "id": "knH76sDKYsVX",
         "colab": {
-          "base_uri": "https://localhost:8080/"
+          "base_uri": "https://localhost:8080/",
+          "height": 143
         },
-        "outputId": "f73edf83-fe84-475f-cefa-46c2f81aa2bb"
+        "outputId": "43eaa71d-801c-4d15-bbc7-2361f88cf035"
       },
       "execution_count": null,
       "outputs": [
         {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "   0    1   2\n",
-            "0  1  aaa  22\n",
-            "1  2  bbb  25\n",
-            "2  3  ccc  24\n"
-          ]
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "    a   b\n",
+              "0   1  22\n",
+              "1  10  25\n",
+              "2  10  24"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-a1b88192-d74f-4f8d-978a-2715ed4480a2\">\n",
+              "    <div class=\"colab-df-container\">\n",
+              "      <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>a</th>\n",
+              "      <th>b</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>1</td>\n",
+              "      <td>22</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>10</td>\n",
+              "      <td>25</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>10</td>\n",
+              "      <td>24</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "      <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-a1b88192-d74f-4f8d-978a-2715ed4480a2')\"\n",
+              "              title=\"Convert this dataframe to an interactive table.\"\n",
+              "              style=\"display:none;\">\n",
+              "        \n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M0 0h24v24H0V0z\" fill=\"none\"/>\n",
+              "    <path d=\"M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z\"/><path d=\"M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z\"/>\n",
+              "  </svg>\n",
+              "      </button>\n",
+              "      \n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      flex-wrap:wrap;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "      <script>\n",
+              "        const buttonEl =\n",
+              "          document.querySelector('#df-a1b88192-d74f-4f8d-978a-2715ed4480a2 button.colab-df-convert');\n",
+              "        buttonEl.style.display =\n",
+              "          google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "        async function convertToInteractive(key) {\n",
+              "          const element = document.querySelector('#df-a1b88192-d74f-4f8d-978a-2715ed4480a2');\n",
+              "          const dataTable =\n",
+              "            await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                     [key], {});\n",
+              "          if (!dataTable) return;\n",
+              "\n",
+              "          const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "            '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "            + ' to learn more about interactive tables.';\n",
+              "          element.innerHTML = '';\n",
+              "          dataTable['output_type'] = 'display_data';\n",
+              "          await google.colab.output.renderOutput(dataTable, element);\n",
+              "          const docLink = document.createElement('div');\n",
+              "          docLink.innerHTML = docLinkHtml;\n",
+              "          element.appendChild(docLink);\n",
+              "        }\n",
+              "      </script>\n",
+              "    </div>\n",
+              "  </div>\n",
+              "  "
+            ]
+          },
+          "metadata": {},
+          "execution_count": 27
         }
       ]
     }
