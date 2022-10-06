@@ -1,0 +1,41 @@
+﻿Natural Disaster Intensity Analysis and Classification using Artificial Intelligence
+          Introduction       
+            Natural disasters are inevitable, and the occurrence of disasters drastically affects the economy, ecosystem and human life. Buildings collapse, ailments spread and sometimes natural disasters such as tsunamis, earthquakes, and forest fires can devastate nations. When earthquakes occur, millions of buildings collapse due to seismological effects. 
+         Many machine learning approaches have been used for wildfire predictions since the 1990s. A recent study used a machine learning approach in Italy. This study used the random forest technique for susceptibility mapping of wildfire. 
+         Floods are the most devastating natural disaster, damaging properties, human lives and infrastructures. To map flood susceptibility, an assembled machine learning technique based on random forest (RF), random subspace (RS) and support vector machine (SVM) was used.
+        
+Related Works:
+       Studies analyzing the intensity of natural disasters have gained significant attention in the current decade. A. Ashiquzzaman et al.  utilized a video source for fire detection; processing video sources is a feasible task due to convolutional neural networks (CNNs), which require high performance computational resources including graphics hardware, and thus a smart and cost-effective fire detection network is proposed based on architecture of convolutional neural networks.
+
+Methodology:
+        This section defines the overall method for natural disaster intensity analysis and classification based on multispectral images using a multilayered deep convolutional neural network. Moreover, this method consists of two blocks of a convolutional neural network. The first block detects a natural disaster occurring and the second one defines the intensity type of the natural disaster.
+	
+
+	
+Block-I Convolutional Neural Network (B-I CNN)
+          According to block-I of the convolutional neural network, only a detection process occurred in this phase. However, this block also consists of three small batches having four layers each. Moreover, an image input layer and fully connected layers are present.
+ 
+         Additionally, some parameters are also defined with learning rate 0.001 and epoch size 40. On the other hand, the convolutional layers use a filter size of 3 × 3, stride 1 and eight filters that increase in number from 16 to 32 for the second and third minibatches of convolutional neural networks.
+
+
+
+
+Results and Discussion
+         The proposed multilayered deep convolutional neural network was simulated on the computer system with Core i7, Central Processing Unit (CPU) 2.8 Ghz with 16 GB RAM in MATLAB 2018a and different types of results were calculated.
+Dataset and Preprocessing
+      In our research, the dataset used was collected from PyImage Search readers, who used Google Images to collect the total number (4428) of images in different classes. 
+      The dataset was separated into four classes: cyclone, earthquake, flood and wildfire, with 928, 1350, 1073 and 1077 images, respectively
+
+
+
+Evaluation Criterion
+          To evaluate the performance of the proposed multilayered deep convolutional neural network, uses a train–test validation schema. To train the whole model, the training dataset was used, while for the fine-tuning of model the validation set was used. The performance of the whole framework was calculated on the basis of the test dataset. For the evaluation of the proposed model on the given dataset of classification for positive and negative values, four types of data were accrued: true positive (TP), the number of correctly positive classified images; true negative (TN) the number of correctly negative classified images; false positive (FP), the number of incorrectly positive classified images; and false negative (FN), the number of images that are incorrectly classified as negative images.
+Conclusions
+            Many researchers have attempted to use different deep learning methods for detection of natural disasters. However, the detection of natural disasters by using deep learning techniques still faces various issues due to noise and serious class imbalance problems. 
+            To address these problems, we proposed a multilayered deep convolutional neural network for detection and intensity classification of natural disasters. 
+            The proposed method works in two blocks—one for detection of natural disaster occurrence and the second block is used to remove imbalanced class issues. The results were calculated as average statistical values: sensitivity, 97.54%; specificity, 98.22%; accuracy rate, 99.92%; precision, 97.79%; and F1-score, 97.97% for the proposed model. 
+The proposed model achieved the highest accuracy as compared to other state-of-the-art methods due to its multilayered structure. The proposed model performs significantly better for natural disaster detection and classification, but in the future the model can be used for various natural disaster detection processes.
+
+
+
+	
